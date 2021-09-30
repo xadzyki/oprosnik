@@ -1,0 +1,130 @@
+.buttons{
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 0px 35%;
+    outline: 0;
+}
+
+.sell{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    transition: 0.3s;
+    background: #5d53d6;
+    justify-content: center;
+    text-align: center;
+    align-items:center;
+}
+.sell a{
+    text-decoration: none;
+    color: #fff;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.prev {
+    height: 50px;
+    flex-basis: 48.5%;
+    transition: 0.3s;
+}
+.next {
+    height: 50px;
+    flex-basis: 48.5%;
+    transition: 0.3s;
+}
+
+button{
+    border: 0;
+}
+
+.prev:hover, .next:hover{
+    box-shadow: 0 0 10px #abb5f2;
+}
+.sell:hover{
+    box-shadow: 0 0 10px #abb5f2;
+}
+.active_big{
+    background-color:#abb5f2;
+}
+
+.active_big:hover{
+    background-color:#5d53d6;
+    box-shadow: 0 0 10px #abb5f2;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.deactive_big{
+    background-color:#abb5f2;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.active{
+    background-color:#abb5f2;
+}
+
+.active:hover{
+    background-color:#5d53d6;
+    box-shadow: 0 0 10px #abb5f2;
+    color: #fff;
+}
+
+.deactive{
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.deactive:hover{
+    box-shadow: none;
+}
+
+.noLink{
+    pointer-events: none;
+}
+
+@media screen and (max-width: 1030px){
+    .buttons{
+        flex-direction: column;
+        margin-top: 30px;
+        padding: 0px 25%;
+        outline: 0;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .buttons{
+            flex-direction: column;
+            margin-top: 30px;
+            padding: 0px 0%;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+        .sell{
+            width: 100%;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        .sell p{
+            font-size: 14px;
+        }
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .prev {
+            height: 50px;
+            flex-basis: 48.5%;
+        }
+        .next {
+            height: 50px;
+            flex-basis: 48.5%;
+        }
+}

@@ -1,0 +1,89 @@
+.question{
+    flex-direction: column;
+    margin-top: 100px;
+    padding: 0px 35%;
+}
+.question p{
+    text-align: left;
+}
+.number{
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #696969;
+}
+.question-text{
+    margin-bottom: 60px;
+    font-size: 16px;
+    color: #000;
+}
+
+input, select{
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+}
+
+input :active,:focus{
+    border-bottom: 1px solid#5d53d6;
+    outline: 0;
+    outline-offset: 0;
+}
+
+select{
+    height: 40px;
+}
+.invise{
+    display: none;
+}
+
+@media screen and (max-width: 1030px){
+    .question{
+        flex-direction: column;
+        margin-top: 100px;
+        padding: 0px 25%;
+    }
+    .buttons{
+        flex-direction: column;
+        margin-top: 30px;
+        padding: 0px 25%;
+        outline: 0;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .question{
+        flex-direction: column;
+        margin-top: 50px;
+        padding: 0px 0px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .question p{
+        text-align: left;
+    }
+    .number{
+        margin-bottom: 10px;
+        font-size: 20px;
+        color: #696969;
+    }
+    .question-text{
+        margin-bottom: 60px;
+        font-size: 16px;
+        color: #000;
+    }
+    
+    input{
+        width: 100%;
+        border: none;
+        font-size: 16px;
+        border-bottom: 1px solid black;
+        margin-bottom: 0px;
+    }
+    input :active, :focus{
+        border-bottom: 2px solid#5d53d6;
+        outline: 0;
+        outline-offset: 0;
+    }
+}
