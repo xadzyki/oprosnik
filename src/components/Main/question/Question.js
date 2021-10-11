@@ -9,7 +9,6 @@ const Bounce = styled.div`animation: 0.5s ${keyframes`${fadeIn}` }`;
 function getQuestionOption(variantsAnswer) {
     return variantsAnswer.map((variant,i) => <option key={variant[i]} value={variant.id}>{variant.text}</option>)
 }
-
 export default class Question extends Component { 
 
     render(){

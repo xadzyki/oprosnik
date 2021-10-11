@@ -24,8 +24,6 @@ export default class Main extends Component {
       questionVariants: {},
       data: "",
       isFatched: false,
-      // selectAnswer:'',
-      // selectText:'',
       goNextQuestion: false
     };
     this.nextQeustion = this.nextQeustion.bind(this);
@@ -60,8 +58,6 @@ handleSelect(event){
   value = event.target.value
   text = event.target.selectedOptions[0].text
   this.setState({
-    // selectAnswer:value,
-    // selectText:text,
     goNextQuestion:true
   })
   if(text===''){
@@ -78,8 +74,6 @@ handleInput(event) {
   value = event.target.id
   text = event.target.value
   this.setState({
-    // selectText:text,
-    // selectAnswer:value,
     goNextQuestion:true
   })
   if(text===''){

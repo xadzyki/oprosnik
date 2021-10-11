@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 import './style.css';
 
-// let countQuestion = 24,
-//     maxQuestion = 24
-
 let end = '/end';
 
 function onChangeNext(bool, answerCount, maxCount) {
@@ -40,7 +37,6 @@ export default class Buttons extends Component {
              <button className={onChangePrev(this.props.answerCount)} onClick={this.props.prev}>Предыдущий вопрос</button>
              <button className={onChangeNext(this.props.goNextQuestion, this.props.answerCount, this.props.maxCount)} onClick={this.props.func}>Следующий вопрос</button>
           </div> 
-          {/* {lastQuestion(this.props.answerCount, this.props.maxCount, inputChange, selectChange)}    */}
         </div>
         </>
     )} else {

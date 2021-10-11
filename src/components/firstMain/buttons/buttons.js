@@ -10,9 +10,7 @@ export default class ConfirmPoliticalBut extends Component {
         <div className="buttons">
             <a 
             href={main}
-            className="sell" 
-            // type="submit" 
-            // onClick={this.props.ConfirmPoliticalBut}
+            className="sell"
             ><b>Отправить ответ</b></a>
             <p className="politic">Нажимая на кнопку, вы принимаете условия
                 <br/><ins> <a href={aboutPol}>политики конфедициальности</a></ins></p>

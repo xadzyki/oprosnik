@@ -10,8 +10,8 @@ function Footer() {
       <footer>
             <div>
                 <ul>
-                    <li class="mail"><a href={mail}> Поддержка: example@mail.com</a></li>
-                    <li class="politica"><a href={aboutPol}>Политика конфедициальности</a></li>
+                    <li className="mail"><a href={mail}> Поддержка: example@mail.com</a></li>
+                    <li className="politica"><a href={aboutPol}>Политика конфедициальности</a></li>
                 </ul>
             </div>
         </footer>
